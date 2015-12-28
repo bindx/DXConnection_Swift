@@ -51,8 +51,8 @@
 		C1077A7B1C0D4991004F2238 = {
 			isa = PBXGroup;
 			children = (
-				C1077A861C0D4991004F2238 /* UITableView */,
 				C1077A851C0D4991004F2238 /* Products */,
+				C1077A861C0D4991004F2238 /* UITableView */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,18 +67,18 @@
 		C1077A861C0D4991004F2238 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				C1077A871C0D4991004F2238 /* AppDelegate.swift */,
 				C14993E01C31365A003E6C51 /* DXHttprequest */,
+				C1077A871C0D4991004F2238 /* AppDelegate.swift */,
+				C1077A8E1C0D4991004F2238 /* Assets.xcassets */,
+				C1077A9D1C0D56BC004F2238 /* DetailViewController.swift */,
+				C1077A931C0D4991004F2238 /* Info.plist */,
+				C1077A901C0D4991004F2238 /* LaunchScreen.storyboard */,
+				C1077A8B1C0D4991004F2238 /* Main.storyboard */,
+				C1077A991C0D503A004F2238 /* MyTableViewCell.swift */,
+				C1077A9B1C0D5299004F2238 /* MyTableViewCell.xib */,
 				C1ACEAA31C27D7E7006B6067 /* SwiftyJSON.h */,
 				C1ACEAA41C27D7E7006B6067 /* SwiftyJSON.swift */,
 				C1077A891C0D4991004F2238 /* ViewController.swift */,
-				C1077A9D1C0D56BC004F2238 /* DetailViewController.swift */,
-				C1077A991C0D503A004F2238 /* MyTableViewCell.swift */,
-				C1077A9B1C0D5299004F2238 /* MyTableViewCell.xib */,
-				C1077A8B1C0D4991004F2238 /* Main.storyboard */,
-				C1077A8E1C0D4991004F2238 /* Assets.xcassets */,
-				C1077A901C0D4991004F2238 /* LaunchScreen.storyboard */,
-				C1077A931C0D4991004F2238 /* Info.plist */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -89,7 +89,7 @@
 				C1ACEAA21C27D7E7006B6067 /* DXHttpRequest.swift */,
 				C1ACEAA51C27D7E7006B6067 /* UIImageView+Network.swift */,
 			);
-			name = DXHttprequest;
+			path = DXHttprequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +183,7 @@
 				C1077A8C1C0D4991004F2238 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C1077A901C0D4991004F2238 /* LaunchScreen.storyboard */ = {
@@ -191,6 +192,7 @@
 				C1077A911C0D4991004F2238 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
