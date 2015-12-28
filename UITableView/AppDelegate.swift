@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  UITableView
 //
-//  Created by apple on 15/12/1.
-//  Copyright © 2015年 apple. All rights reserved.
+//  Created by Bindx on 15/7/8.
+//  Copyright © 2015年 Bindx. All rights reserved.
 //
 
 import UIKit

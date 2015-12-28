@@ -12,6 +12,12 @@
 		C1077A8D1C0D4991004F2238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1077A8B1C0D4991004F2238 /* Main.storyboard */; };
 		C1077A8F1C0D4991004F2238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1077A8E1C0D4991004F2238 /* Assets.xcassets */; };
 		C1077A921C0D4991004F2238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1077A901C0D4991004F2238 /* LaunchScreen.storyboard */; };
+		C1077A9A1C0D503B004F2238 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1077A991C0D503A004F2238 /* MyTableViewCell.swift */; };
+		C1077A9C1C0D5299004F2238 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1077A9B1C0D5299004F2238 /* MyTableViewCell.xib */; };
+		C1077A9E1C0D56BC004F2238 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1077A9D1C0D56BC004F2238 /* DetailViewController.swift */; };
+		C1ACEAA61C27D7E7006B6067 /* DXHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACEAA21C27D7E7006B6067 /* DXHttpRequest.swift */; };
+		C1ACEAA71C27D7E7006B6067 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACEAA41C27D7E7006B6067 /* SwiftyJSON.swift */; };
+		C1ACEAA81C27D7E7006B6067 /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACEAA51C27D7E7006B6067 /* UIImageView+Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		C1077A8E1C0D4991004F2238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1077A911C0D4991004F2238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1077A931C0D4991004F2238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1077A991C0D503A004F2238 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		C1077A9B1C0D5299004F2238 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		C1077A9D1C0D56BC004F2238 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C1ACEAA21C27D7E7006B6067 /* DXHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHttpRequest.swift; sourceTree = "<group>"; };
+		C1ACEAA31C27D7E7006B6067 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		C1ACEAA41C27D7E7006B6067 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C1ACEAA51C27D7E7006B6067 /* UIImageView+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +68,28 @@
 			isa = PBXGroup;
 			children = (
 				C1077A871C0D4991004F2238 /* AppDelegate.swift */,
+				C14993E01C31365A003E6C51 /* DXHttprequest */,
+				C1ACEAA31C27D7E7006B6067 /* SwiftyJSON.h */,
+				C1ACEAA41C27D7E7006B6067 /* SwiftyJSON.swift */,
 				C1077A891C0D4991004F2238 /* ViewController.swift */,
+				C1077A9D1C0D56BC004F2238 /* DetailViewController.swift */,
+				C1077A991C0D503A004F2238 /* MyTableViewCell.swift */,
+				C1077A9B1C0D5299004F2238 /* MyTableViewCell.xib */,
 				C1077A8B1C0D4991004F2238 /* Main.storyboard */,
 				C1077A8E1C0D4991004F2238 /* Assets.xcassets */,
 				C1077A901C0D4991004F2238 /* LaunchScreen.storyboard */,
 				C1077A931C0D4991004F2238 /* Info.plist */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		C14993E01C31365A003E6C51 /* DXHttprequest */ = {
+			isa = PBXGroup;
+			children = (
+				C1ACEAA21C27D7E7006B6067 /* DXHttpRequest.swift */,
+				C1ACEAA51C27D7E7006B6067 /* UIImageView+Network.swift */,
+			);
+			name = DXHttprequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1077A921C0D4991004F2238 /* LaunchScreen.storyboard in Resources */,
+				C1077A9C1C0D5299004F2238 /* MyTableViewCell.xib in Resources */,
 				C1077A8F1C0D4991004F2238 /* Assets.xcassets in Resources */,
 				C1077A8D1C0D4991004F2238 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +166,11 @@
 			files = (
 				C1077A8A1C0D4991004F2238 /* ViewController.swift in Sources */,
 				C1077A881C0D4991004F2238 /* AppDelegate.swift in Sources */,
+				C1077A9A1C0D503B004F2238 /* MyTableViewCell.swift in Sources */,
+				C1ACEAA71C27D7E7006B6067 /* SwiftyJSON.swift in Sources */,
+				C1077A9E1C0D56BC004F2238 /* DetailViewController.swift in Sources */,
+				C1ACEAA61C27D7E7006B6067 /* DXHttpRequest.swift in Sources */,
+				C1ACEAA81C27D7E7006B6067 /* UIImageView+Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +320,7 @@
 				C1077A981C0D4991004F2238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
