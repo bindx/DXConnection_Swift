@@ -73,30 +73,29 @@ class Request {
     
     struct Get {
         static func dataWith(url: String,result: ((result: JSON) ->Void)){
-            Request().initWithUrlRequest(url, httpmethod: "get", result: result, imgData: nil);
+            Request().initWithUrlRequest(url, httpmethod: "get",data: nil, result: result, imgData: nil);
         }
     }
     
-    struct GetImg {
+    struct GetData {
         static func dataWith(url: String,result: ((result: NSData) ->Void)){
-            Request().initWithUrlRequest(url, httpmethod: "get", result: nil, imgData: result);
+            Request().initWithUrlRequest(url, httpmethod: "get",data: nil, result: nil, imgData: result);
         }
     }
     
     struct Post {
-        static func dataWith(url: String,result: ((result: JSON) ->Void)){
-            Request().initWithUrlRequest(url, httpmethod: "post", result: result ,imgData: nil);
+        static func dataWith(url: String,data: NSData?,result: ((result: JSON) ->Void)){
+            Request().initWithUrlRequest(url, httpmethod: "post",data: data, result: result ,imgData: nil);
         }
     }
     
-    func initWithUrlRequest(url: String, httpmethod: String,result:((result: JSON) ->Void)?,imgData: ((result: NSData) ->Void)?){
+    func initWithUrlRequest(url: String, httpmethod: String, data:NSData?, result:((result: JSON) ->Void)?,imgData: ((result: NSData) ->Void)?){
         if let _ = result{
-//            queue.addOperation(DXHttpOperation(url: NSURL(string: url), result: result!, data: nil));
-            queue.addOperation(DXHttpOperation(url: NSURL(string: url), result: result!, imgresult: nil, data: nil));
+                queue.addOperation(DXHttpOperation(url: NSURL(string: url), result: result!, imgresult: nil, data: data));
         }
         
         if let _ = imgData{
-            queue.addOperation(DXHttpOperation(url: NSURL(string: url), result: nil, imgresult: imgData, data: nil));
+            queue.addOperation(DXHttpOperation(url: NSURL(string: url), result: nil, imgresult: imgData, data: data));
         }
     }
 }

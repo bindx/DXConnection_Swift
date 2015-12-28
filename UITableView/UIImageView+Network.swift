@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImageView{
     func setImageWithUrl(url: String){
-        Request.GetImg.dataWith(url) { (result) -> Void in
+        Request.GetData.dataWith(url) { (result) -> Void in
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.image = UIImage(data: result);
@@ -22,7 +22,7 @@ extension UIImageView{
 
 extension UIButton{
     func setImageWithUrl(url: String ,state: UIControlState){
-        Request.GetImg.dataWith(url) { (result) -> Void in
+        Request.GetData.dataWith(url) { (result) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.setBackgroundImage(UIImage(data: result), forState: state);
             });

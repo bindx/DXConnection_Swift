@@ -34,7 +34,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             })
             
         };
+        
     }
+    
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
@@ -42,9 +44,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! MyTableViewCell;
         
         if let data = self.data{
-            cell.title.text = data[indexPath.row]["title"] as? String;
-            cell.detail.text = data[indexPath.row]["digest"] as? String;
-            cell.img.setImageWithUrl((data[indexPath.row]["imgsrc"] as? String)!);
+            cell.setInfo(data[indexPath.row] as! NSDictionary, indexPath: indexPath.row);
         }
         
         return cell;
