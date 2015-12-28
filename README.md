@@ -42,6 +42,8 @@ UIImageView+Network.swift|给UIImageView&UIButton添加网络方法|
 #### ---- 设置网络图片
 ```
   xxxx.setImageWithUrl("http://imageUrl");
+
+  xxx的类型必须为:UIButton或UIImageView
   
 ```
 
